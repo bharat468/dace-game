@@ -54,7 +54,7 @@ imagebox.addEventListener("click", () => {
 
           
         if (Number(newarrey) === random) {
-           score.innerHTML = Number(score.innerHTML) + 35;
+           score.innerHTML = Number(score.innerHTML) + 10;
         }
         else {
            score.innerHTML = Number(score.innerHTML) - 5;
