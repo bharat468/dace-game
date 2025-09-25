@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+#wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px 0 0;
+}
+
+.forentmatter{
+    text-align: center;
+}
+.forentmatter h1{
+font-size: 100px;
+}
+
+.forentmatter button{
+    padding: 10px 69px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: all .2s linear;
+}
+
+.forentmatter button:hover{
+    background-color: white;
+    color: black;
+}
+
+#main{
+    display: none;
+}
+
+.topmain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 40px;
+}
+
+.alert{
+    background-color: red;
+    margin-bottom: 5px;
+    padding: 2px 5px;
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+    display: none;
+}
+
+.counter{
+    text-align: center;
+    font-size: 25px;
+}
+
+.counter h1{
+    font-size: 150px;
+}
+
+.counter p{
+    margin-top: -35px;
+}
+
+.number{
+    text-align: right;
+    font-size: 25px;
+}
+
+.number p {
+    margin-top: 15px;
+}
+
+.submain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: all .2s linear;
+}
+
+
+.one:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.maincenter{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+.imagebox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+.maincenter p{
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.nextpagebutton{
+    width: 290px ;
+    margin: auto;
+    flex-direction: column;
+
+}
+
+.Reset{
+    padding: 10px 89px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: all .2s linear;
+}
+
+
+.Reset:hover{
+    background-color: white;
+    color: black;
+}
+
+.Show-Rules{
+    padding: 10px 89px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all .2s linear;
+}
+
+
+.Show-Rules:hover{
+    background-color: black;
+    color: white;
+}
+
+.hide-Rules{
+    padding: 10px 89px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all .2s linear;
+    display: none;
+}
+
+
+.hide-Rules:hover{
+    background-color: white;
+    color: black;
+}
