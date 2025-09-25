@@ -36,20 +36,22 @@ let newarrey = ""
 one.forEach((num) => {
     num.addEventListener("click", () => {
          newarrey = num.innerHTML
+         alertbox.style.display = "none"    
         console.log(newarrey);
     })
 })
 
 imagebox.addEventListener("click", () => {
 
+
     if(newarrey === ""){
         alertbox.style.display = "block";
         return;
 
     }
+    else{
 
     let random = Math.floor(Math.random() * 6) + 1
-    console.log(random);
     imagebox.innerHTML = `<img src="${image[random - 1]}" alt="">`
 
           
@@ -59,6 +61,9 @@ imagebox.addEventListener("click", () => {
         else {
            score.innerHTML = Number(score.innerHTML) - 5;
     }
+
+}
+newarrey=""
 })
 
 
