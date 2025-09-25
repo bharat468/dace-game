@@ -181,3 +181,29 @@ font-size: 100px;
     background-color: white;
     color: black;
 }
+
+@media (max-width: 575px){
+    #wrapper{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #main{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .topmain{
+        flex-direction: column;
+        margin: 40px auto;
+    }
+    .one{
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-top: 40px;
+
+}
+}
