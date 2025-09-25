@@ -6,6 +6,13 @@ let Play = document.querySelector(".Play")
 
 let Reset = document.querySelector(".Reset")
 
+let hide = document.querySelector(".hide-Rules")
+
+let show = document.querySelector(".Show-Rules")
+
+let hidebox = document.querySelector(".hidebox")
+
+
 Play.addEventListener("click", () => {
     wrapper.remove()
     main.style.display = "block"
@@ -73,6 +80,24 @@ Reset.addEventListener("click", ()=>{
     newarrey = ""
     alertbox.style.display = "none"
 })
+
+
+show.addEventListener("click", ()=>{
+    show.style.display = "none"
+    hide.style.display = "block"
+    hidebox.style.display = "block"
+
+
+})
+
+hide.addEventListener("click", ()=>{
+    hidebox.style.display = "none"
+    hide.style.display = "none"
+    show.style.display = "block"
+
+    
+})
+
 
 
 

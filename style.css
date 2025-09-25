@@ -222,6 +222,19 @@ font-size: 100px;
 }
 }
 
+.hidebox{
+    width: 60%;
+    padding: 10px 25px;
+    background-color: burlywood;
+    border-radius: 10px;
+    margin: 50px auto;
+    display: none;
+}
+
+.hidebox p{
+    margin-top: 5px;
+}
+
 /* .imagebox:hover{
     transform: rotate(360deg);
     transition: all .1s linear;
