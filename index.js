@@ -13,7 +13,7 @@ Play.addEventListener("click", () => {
 
 let score = document.querySelector("#score")
 let one = document.querySelectorAll(".one")
-let alert = document.querySelector(".alert")
+let alertbox = document.querySelector(".alert")
 let imagebox = document.querySelector(".imagebox")
 
 let image = [
@@ -43,7 +43,7 @@ one.forEach((num) => {
 imagebox.addEventListener("click", () => {
 
     if(newarrey === ""){
-        alert.style.display = "block";
+        alertbox.style.display = "block";
         return;
 
     }
@@ -53,7 +53,7 @@ imagebox.addEventListener("click", () => {
     imagebox.innerHTML = `<img src="${image[random - 1]}" alt="">`
 
           
-        if (newarrey === random) {
+        if (Number(newarrey) === random) {
            score.innerHTML = Number(score.innerHTML) + 35;
         }
         else {
@@ -64,7 +64,9 @@ imagebox.addEventListener("click", () => {
 
 Reset.addEventListener("click", ()=>{
     score.innerHTML = 0;
-    alert.style.display = "none"
+    diceimage.src = image[0]
+    newarrey = ""
+    alertbox.style.display = "none"
 })
 
 
